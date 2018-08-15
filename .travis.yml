@@ -25,5 +25,3 @@ script:
 after_success:
 - bin/createcoverage
 - coveralls
-notifications:
-  irc: irc.freenode.org#plone-testing
