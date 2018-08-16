@@ -11,7 +11,11 @@ install:
 - sed -ie "s#test-4.3.x.cfg#test-$PLONE_VERSION.x.cfg#" buildout.cfg
 - python bootstrap.py
 - bin/buildout annotate
-- bin/buildout
+- mkdir eggs
+- cd eggs
+- ls
+- cd ../
+- bin/buildout -v
 before_script:
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
