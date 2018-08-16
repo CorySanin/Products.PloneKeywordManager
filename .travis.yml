@@ -25,3 +25,5 @@ script:
 after_success:
 - bin/createcoverage
 - coveralls
+notifications:
+  email: false
