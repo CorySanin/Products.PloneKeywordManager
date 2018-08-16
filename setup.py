@@ -42,6 +42,7 @@ setup(name='Products.PloneKeywordManager',
       install_requires=[
         'setuptools',
         'plone.api',
+        'six',
         ],
       extras_require={
         'Levenshtein': ['python-Levenshtein'],
