@@ -25,5 +25,7 @@ script:
 after_success:
 - bin/createcoverage
 - coveralls
+after_failure:
+- grep -Ri --include="requires.txt" "six" eggs/*
 notifications:
   email: false
