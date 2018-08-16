@@ -27,5 +27,7 @@ after_success:
 - coveralls
 after_failure:
 - grep -Ri --include="requires.txt" "six" eggs/*
+after_script:
+- grep -Ri --include="requires.txt" "six" eggs/*
 notifications:
   email: false
